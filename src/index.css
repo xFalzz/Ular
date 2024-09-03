@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Untuk Webkit Browsers */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: black;
+	background: rgb(67, 66, 66);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(31.6px);
+	-webkit-backdrop-filter: blur(11.6px);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #888;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
+
+/* Untuk Firefox Browsers */
+::-moz-scrollbar {
+	width: 10px;
+}
+
+::-moz-scrollbar-track {
+	background-color: black;
+}
+
+::-moz-scrollbar-thumb {
+	background-color: #888;
+	border-radius: 5px;
+}
+
+::-moz-scrollbar-thumb:hover {
+	background-color: #555;
+}
+
+body {
+	height: 300vh;
+	background: #000;
+	font-family: "Roboto", sans-serif;
+}
+
+.SectionImage {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to top, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0)),
+		linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 2%, rgba(0, 0, 0, 0)), url("public/images/what-do-snakes-mean-spiritually.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.LeftText {
+	color: white;
+	opacity: 80%;
+	position: absolute;
+	left: 5%;
+	top: 30%;
+}
+
+.LeftText b {
+	position: relative;
+	right: 1%;
+	font-size: 70px;
+}
+
+.LeftText p {
+	width: 40%;
+	opacity: 75%;
+	font-size: 20px;
+}
+
+.ContainerTitle {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	color: white;
+	opacity: 80%;
+}
+
+.TextNetflix img {
+	padding-top: 5%;
+	width: 100px;
+	height: auto;
+}
+
+.ContainerTitle span {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.Navbar {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1%;
+	font-size: 1.2em;
+}
+
+.Navbar ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+}
+
+.CatGallery b {
+	color: white;
+	font-size: 40px;
+	opacity: 90%;
+	margin-top: 1.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#ContainerImgGallery img {
+	display: block;
+  }
+  
+  #ContainerImgGallery img:not([src]) {
+	display: none;
+  }
+  
+
+#ContainerGallery img {
+	filter: brightness(50%);
+	transition: transform 0.5s ease;
+}
+
+#ContainerGallery img:hover{
+ transform: scale(1.02);
+ filter: brightness(100%);
+}
+
+.SectionHp {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+#CardMedia {
+	position: relative;
+	background: #121212;
+	border: 1px solid white;
+	color: white;
+	width: 300px;
+	height: 120px;
+	right: 0.2%;
+	top: 22%;
+	border-radius: 5pt;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#TitleSong {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+#ArtistSong {
+	color: white;
+	opacity: 80%;
+}
+
+/* 
+.grid-gallery .grid-item {
+	position: relative;
+	background-color: #efefef;
+	overflow: hidden;
+}
+
+.grid-gallery .grid-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.grid-gallery .grid-item:hover img {
+	transform: scale(1.1);
+}
+
+.grid-gallery .grid-item a {
+	cursor: zoom-in;
+}
+ */
+/* .grid-gallery .grid-item:nth-child(3n -2) {
+	grid-column: span 2;
+	grid-row: span 2;
+} */
+
+.cta {
+	display: flex;
+	padding: 11px 33px;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	font-size: 25px;
+	color: white;
+	background: #e50914;
+	transition: 1s;
+	box-shadow: 6px 6px 0 black;
+	transform: skewX(-15deg);
+	border: none;
+}
+
+.cta:focus {
+	outline: none;
+}
+
+.cta:hover {
+	transition: 0.5s;
+	box-shadow: 10px 10px 0 white;
+}
+
+.cta .second {
+	transition: 0.5s;
+	margin-top: 8px;
+	margin-right: 0px;
+}
+
+.cta:hover .second {
+	transition: 0.5s;
+	margin-right: 20px;
+}
+
+.span {
+	transform: skewX(15deg);
+}
+
+.second {
+	width: 20px;
+	margin-left: 10px;
+	position: relative;
+	top: 12%;
+}
+
+.one {
+	transition: 0.4s;
+	transform: translateX(-60%);
+}
+
+.two {
+	transition: 0.5s;
+	transform: translateX(-30%);
+}
+
+.cta:hover .three {
+	animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+	transform: translateX(0%);
+	animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+	transform: translateX(0%);
+	animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+	0% {
+		fill: white;
+	}
+
+	50% {
+		fill: black;
+	}
+
+	100% {
+		fill: white;
+	}
+}
+
+.ButtonNext {
+	margin-top: 2%;
+}
+
+.pagination-container {
+}
+
+.cssbuttons-io-button {
+	display: flex;
+	align-items: center;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 0.4em 1.4em 0.4em 1.1em;
+	color: white;
+	background: #ad5389;
+	background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+	border: none;
+	box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+	letter-spacing: 0.05em;
+	border-radius: 5pt;
+}
+
+.cssbuttons-io-button svg {
+	margin-right: 6px;
+}
+
+.cssbuttons-io-button:hover {
+	box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.cssbuttons-io-button:active {
+	box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+#Footer {
+	background: linear-gradient(to top, rgba(229, 9, 20, 0.514) 5%, rgba(0, 0, 0, 0));
+}
+
+@media (max-width: 768px) {
+/* 	.grid-gallery {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-auto-rows: 250px;
+	}
+
+	.grid-gallery .grid-item:nth-child(3n -2) {
+		grid-column: unset;
+		grid-row: unset;
+	} */
+}
+
+#ImagesTv {
+	height: auto;
+	width: 30em;
+}
+
+#ImagesHp {
+	width: auto;
+	height: 35em;
+	z-index: -1;
+}
+
+/* Contoh gaya CSS untuk mengatur ukuran kotak SweetAlert */
+.my-custom-popup {
+	margin-top: 4%;
+	width: 300px; /* Sesuaikan ukuran lebar sesuai keinginan */
+  }
+  
+  .my-custom-title {
+	font-size: 18px; /* Sesuaikan ukuran font judul sesuai keinginan */
+  }
+  
+
+  #ImgCat1{
+	display: none;
+  }
+  
+
+/* Target phone screens and smaller */
+@media only screen and (min-width: 0px) and (max-width: 765px) {
+	.my-custom-popup {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 300px; /* Sesuaikan ukuran lebar sesuai keinginan */
+	  }
+
+	.LeftText {
+		color: white;
+		opacity: 80.1%;
+		position: absolute;
+		left: 5%;
+		top: 25%;
+	}
+
+	.LeftText b {
+		position: relative;
+		right: 1%;
+		font-size: 40px;
+	}
+
+	.LeftText p {
+		width: 55%;
+		opacity: 75%;
+		font-size: 15px;
+		position: relative;
+		margin-top: 1%;
+		left: 0.9%;
+	}
+
+	.cta {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5px 20px;
+		text-decoration: none;
+		font-family: "Poppins", sans-serif;
+		font-size: 15px;
+		color: white;
+		text-align: center;
+		background: #e50914;
+		transition: 1s;
+		box-shadow: 6px 6px 0 black;
+		transform: skewX(-15deg);
+		border: none;
+		position: relative;
+		left: 1%;
+	}
+
+	.cta:focus {
+		outline: none;
+	}
+
+	.cta:hover {
+		transition: 0.5s;
+		box-shadow: 10px 10px 0 white;
+	}
+
+	.cta .second {
+		transition: 0.5s;
+		margin-top: 7px;
+		margin-right: 0px;
+	}
+
+	.cta:hover .second {
+		transition: 0.5s;
+		margin-right: 10px;
+	}
+
+	.span {
+		transform: skewX(15deg);
+	}
+
+	.second {
+		width: 5px;
+		margin-left: 10px;
+		position: relative;
+		bottom: 5px;
+	}
+
+	.second svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	#ImagesHp {
+		width: auto;
+		height: 24em;
+		position: absolute;
+		left: 50%;
+		top: 75%;
+		transform: translate(-50%, -50%);
+	}
+
+	#ContainerHp {
+	}
+
+	#ContainerTextPhone {
+		padding: 10%;
+		width: 100%;
+		position: absolute;
+		left: 50%;
+		top: 25%;
+		transform: translate(-50%, -50%);
+	}
+
+	#CardMedia {
+		width: 245px;
+		height: 100px;
+		position: absolute;
+		left: 50%;
+		top: 78.5%;
+		transform: translate(-50%, -50%);
+	}
+
+	#SectionHp {
+	}
+
+	#TitleSong {
+		font-size: 0.8em;
+	}
+
+	#ArtistSong {
+		font-size: 0.6em;
+	}
+
+	#ImgCat {
+		display: none;
+	}
+
+	
+	#ImgCat1{
+		display: flex;
+	  }
+	  
+
+}
